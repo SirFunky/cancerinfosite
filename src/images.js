@@ -1,0 +1,1 @@
+export const headerImage = require('./Images/nedladdning (2).jpg').default; 

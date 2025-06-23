@@ -1,0 +1,15 @@
+@tailwind base; @tailwind components; @tailwind utilities; 
+@layer base {
+    body {
+      background: linear-gradient(
+        45deg,
+        #ff6b6b 0% 16.66%,
+        #4ecdc4 16.66% 33.33%,
+        #45b7d1 33.33% 50%,
+        #96ceb4 50% 66.66%,
+        #ffeead 66.66% 100%
+      );
+      min-height: 100vh;
+      background-attachment: fixed;
+    }
+  }

@@ -1,0 +1,78 @@
+:root {
+  /* Grönskala från bandet */
+  --green-dark: rgb(21, 76, 30);        /* Djupgrön, symbolisk och allvarlig */
+  --green-medium: rgb(49, 124, 46);     /* Stabil grundfärg */
+  --green-light: rgb(125, 186, 114);    /* Vänlig och tillgänglig */
+  --green-vivid: rgb(52, 138, 40);      /* Användbar för knappar och accent */
+
+  /* Kompletterande färger */
+  --golden-metallic: rgb(181, 147, 85); /* Påminner om nålen i första bilden */
+  --pink-logo: rgb(191, 53, 112);       /* PALEMA-loggans färg */
+  --white-base: rgb(248, 247, 246);     /* Ljus bakgrundsfärg */
+  --white-off: rgb(241, 240, 235);      /* Lätt tonad vit för kort och ytor */
+  --gray-shadow: rgb(174, 174, 174);    /* Användbar för subtila skuggor */
+  --black-outline: rgb(28, 28, 28);     /* Text- och konturfärg */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--black-outline);
+  font-family: sans-serif;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.button {
+  background-color: var(--green-vivid);
+  color: var(--white-base);
+  border: 2px solid var(--green-medium);
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--green-light);
+}
+
+.card {
+  background-color: var(--white-off);
+  border: 1px solid var(--gray-shadow);
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  color: var(--pink-logo);
+}
+
+.accent-border {
+  border-color: var(--golden-metallic);
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --white-base: rgb(28, 28, 28);
+    --white-off: rgb(40, 40, 40);
+    --black-outline: rgb(248, 247, 246);
+    --gray-shadow: rgb(80, 80, 80);
+  }
+}
+*/
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
